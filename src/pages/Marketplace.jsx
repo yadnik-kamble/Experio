@@ -12,6 +12,7 @@ import { useSearchParams } from "react-router-dom";
 const Marketplace = () => {
   const [experiences, setExperiences] = useState([]);
   const [loading, setLoading] = useState(true);
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
 
   const [price, setPrice] = useState(5000);
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -22,11 +23,14 @@ const Marketplace = () => {
   const initialSearch = searchParams.get("search") || "";
   const [search, setSearch] = useState(initialSearch);
 
+
   /* Fetch data */
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3001/experiences");
+        const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+
+        const res = await fetch(`${API_URL}/experiences`);
         const data = await res.json();
         setExperiences(data);
       } catch (err) {
@@ -38,6 +42,7 @@ const Marketplace = () => {
 
     fetchData();
   }, []);
+
 
   /* Debounced search */
   useEffect(() => {
