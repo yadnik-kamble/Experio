@@ -6,6 +6,12 @@ It allows users to discover, filter, and explore curated experiences such as wor
 Built with a strong focus on **UI polish, micro-interactions, and smooth animations** to deliver a production-ready frontend experience.
 
 ---
+## 🌐 Live Demo
+
+The Experio application is live and deployed on Vercel.  
+You can explore the full experience, including browsing and searching curated activities, at the link below:
+
+👉 **Live Website:** https://experio-4qlbu45bp-yadnik-kambles-projects.vercel.app/
 
 
 ## 📸 Screenshots
