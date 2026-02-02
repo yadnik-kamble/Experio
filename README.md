@@ -1,16 +1,118 @@
-# React + Vite
+# 🌍 Experio — Premium Experience Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Experio is a modern, premium **experience marketplace web application** inspired by platforms like Airbnb Experiences and Peloton.  
+It allows users to discover, filter, and explore curated experiences such as workshops, adventures, fitness sessions, and live events.
 
-Currently, two official plugins are available:
+Built with a strong focus on **UI polish, micro-interactions, and smooth animations** to deliver a production-ready frontend experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+### Home Page
+![Home Page](src/screenshots/Home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Explore Page
+![Explore Page](src/screenshots/Explore.png)
+## ✨ Key Features
+
+### 🏠 Landing Page
+- Gradient-based hero section with illustration
+- Trending search tags (Scuba Diving, Pottery, Trekking, Yoga)
+- Social proof ("Trusted by 10,000+ explorers")
+- “How It Works” section for clear user onboarding
+- Popular experiences carousel
+- Fully responsive design
+
+### 🔍 Explore Marketplace
+- Experience listing with images, ratings, city, and price
+- Category-based filtering (Art, Fitness, Food, Music, Adventure, Learning)
+- Price range slider
+- Search with debounce
+- Sort dropdown
+- Skeleton loaders & empty states
+- Mobile-friendly filters drawer
+
+### 🎨 UI & UX Enhancements
+- Framer Motion animations (hover, transitions)
+- Shared animation configs for consistency
+- Dark mode support across the app
+- Glassmorphism-inspired cards
+- Smooth micro-interactions for a premium feel
+
+### ⚙️ Architecture & Code Quality
+- Component-driven structure
+- Centralized animation config
+- Mock backend using `json-server`
+- Clean separation of pages and components
+
+---
+
+## 🧰 Tech Stack
+
+- **React (Vite)**
+- **Tailwind CSS v4**
+- **Framer Motion**
+- **React Router DOM**
+- **JSON Server** (mock API)
+
+
+---
+
+## 📁 Project Structure
+   ```bash
+experio
+├── public/
+│ └── vite.svg
+├── src/
+│ ├── animations/
+│ │ └── motionConfig.js
+│ ├── assets/
+│ │ └── react.svg
+│ ├── components/
+│ │ ├── Breadcrumbs.jsx
+│ │ ├── EmptyState.jsx
+│ │ ├── ExperienceCard.jsx
+│ │ ├── ExperienceDetail.jsx
+│ │ ├── FiltersSidebar.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Hero.jsx
+│ │ ├── HowItWorks.jsx
+│ │ ├── MobileFiltersDrawer.jsx
+│ │ ├── Navbar.jsx
+│ │ ├── PopularSection.jsx
+│ │ ├── SearchBar.jsx
+│ │ ├── SkeletonCard.jsx
+│ │ └── SortDropdown.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ └── Marketplace.jsx
+│ ├── screenshots/
+│ │ ├── Home.png
+│ │ └── Explore.png
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+├── db.json
+├── package.json
+├── vite.config.js
+└── README.md
+   ```
+## 🔮 Future Improvements
+
+- Authentication (Login / Signup)
+- Wishlist functionality
+- Experience detail page with booking flow
+- Real backend integration
+- Pagination / Infinite scroll
+- Accessibility improvements
+
+---
+
+## 👨‍💻 Author
+
+**Yadnik Kamble**  
+Frontend Developer | React | UI/UX Enthusiast  
+
+GitHub: [@yadnik-kamble](https://github.com/yadnik-kamble)
