@@ -12,8 +12,6 @@ import { useSearchParams } from "react-router-dom";
 const Marketplace = () => {
   const [experiences, setExperiences] = useState([]);
   const [loading, setLoading] = useState(true);
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
-
   const [price, setPrice] = useState(5000);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [searchInput, setSearchInput] = useState("");
