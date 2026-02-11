@@ -11,7 +11,7 @@ Built with a strong focus on **UI polish, micro-interactions, and smooth animati
 The Experio application is live and deployed on Vercel.  
 You can explore the full experience, including browsing and searching curated activities, at the link below:
 
-👉 **Live Website:** https://experio-4qlbu45bp-yadnik-kambles-projects.vercel.app/
+👉 **Live Website:** https://experio-smoky.vercel.app/
 
 
 ## 📸 Screenshots
